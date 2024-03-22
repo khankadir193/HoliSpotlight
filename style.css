@@ -52,7 +52,7 @@ body {
   /* Adjust margin as needed */
   justify-content: center;
   /* Center items */
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .rewards-card img {
@@ -404,4 +404,13 @@ span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.left-right-arrow-container {
+  display: flex;
+  align-items: center;
+  gap: 11rem;
+  justify-content: center;
+  position: relative;
+  top: -9rem;
 }

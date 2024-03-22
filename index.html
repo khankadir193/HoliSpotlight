@@ -53,9 +53,9 @@
           <img style="width: 3vw; vertical-align: middle ;" src="./image/beans-icon.png" alt="" />
         </span>
       </div>
-      <div class="rewards-card">
-        <img src="./image/Amazon-card.png" alt="" />
-        <img src="./image/In-app-banner.png" alt="" />
+      <div class="rewards-card" id="crousalIcon">
+        <img src="./image/Amazon-card.png" class="crousal-img" alt="amazon-card" />
+        <img src="./image/In-app-banner.png" class="crousal-img" alt="InappBanner" />
       </div>
       <div class="reward-txt">
         <span>
@@ -63,13 +63,27 @@
           the Inapp banner</span>
       </div>
 
+      <div class="left-right-arrow-container">
+        <button
+          style="border: none; box-shadow: none; background: none;transform: scale(.8); "
+          id="prevBtn"
+          onclick="prevImage()"
+        >
+          <img class="left-right-arrow" src="./image/left.png" />
+        </button>
+        <button
+          style="border: none; box-shadow: none; background: none; transform: scale(.8);"
+          id="nextBtn"
+          onclick="nextImage()"
+        >
+          <img class="left-right-arrow" src="./image/Right.png" />
+        </button>
+      </div>
+
     </div>
   </div>
 
   <div class="schedule">
-    <!-- <div class="schedulImg">
-      <img src="./image/schedule-text.png" alt="" />
-    </div> -->
     <div class="schedule-table">
       <!-- first row -->
       <div class="schedule-image">

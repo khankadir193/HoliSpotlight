@@ -13,7 +13,7 @@ document.querySelector('button').addEventListener('click',function (){
 //crousal code 
 let currentIndex = 0;
 const totalImages = document.querySelectorAll('.crousal-img').length;
-const carousel = document.getElementById('image-carousel');
+const carousel = document.getElementById('crousalIcon');
 
 function showImage(index) {
     if (index < 0) {
