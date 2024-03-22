@@ -82,8 +82,8 @@ span {
 
 .schedule {
   margin: 0vw auto;
-  width: 96%;
-  /* height: 72vw; */
+  width: 100%;
+  height: 55vh;
   background-image: url(./image/Schedule-bg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -127,6 +127,7 @@ span {
   position: relative;
   /* width: 25vw; */
   /* right: 12rem; */
+  top: 41vw;
 }
 
 .schedule-image span {
