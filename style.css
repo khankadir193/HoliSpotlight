@@ -162,6 +162,24 @@ span {
   font-weight: 600;
 }
 
+.schedule-tab{
+  display: flex;
+  width: 80%;
+  position: absolute;
+  top: 54rem;
+  left: 2.5rem;
+}
+
+.schedule-tab img{
+  width: 100%;
+}
+
+button{
+  background: none;
+  border: none;
+  outline: none;
+}
+
 .leaderBoard {
   margin: 0vw auto;
   width: 96%;
