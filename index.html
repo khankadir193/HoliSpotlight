@@ -1,456 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holi Spotlight</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Holi Spotlight</title>
-  <link rel="stylesheet" href="./style.css" />
-</head>
-
-<body>
-  <div class="header">
-    <img src="./image/header.png" alt="" width="100%" />
-    <dialog id="customDialog" class="customDialog">
-
-      <div class="dialog-container">
-        <div class="dialog-bg">
-          <div style="position: relative; top: 10rem;">
-            <ul style="display: flex; flex-wrap: wrap; justify-content: flex-start;margin: 0 auto; width: 77%;">
-              <li class="text">
-                8 Top Talents will perform in this new year celebration event, which will be named as "New Year Bash
-                2023"
-              </li>
-              <li class="text1">
-                StreamKar officials will monitor and choose one ultimate winner from 8 Talents.
-              </li>
-              <li class="text2">
-                This event is not just about the performances; it's also gifting based event in order to increase
-                the engagement and viwership of the App.
-              </li>
-            </ul>
+  <body>
+    <div class="header">
+      <img src="./image/header.png" alt="" width="100%" />
+      <dialog id="customDialog" class="customDialog">
+        <div class="dialog-container">
+          <div class="dialog-bg">
+            <div style="position: relative; top: 10rem">
+              <ul
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: flex-start;
+                  margin: 0 auto;
+                  width: 77%;
+                "
+              >
+                <li class="text">
+                  8 Top Talents will perform in this new year celebration event,
+                  which will be named as "New Year Bash 2023"
+                </li>
+                <li class="text1">
+                  StreamKar officials will monitor and choose one ultimate
+                  winner from 8 Talents.
+                </li>
+                <li class="text2">
+                  This event is not just about the performances; it's also
+                  gifting based event in order to increase the engagement and
+                  viwership of the App.
+                </li>
+              </ul>
+            </div>
           </div>
 
+          <button class="closeBtn">
+            <img class="closeBtn" src="./image/close-btn.png" />
+          </button>
         </div>
-
-        <button class="closeBtn">
-          <img class="closeBtn" src="./image/close-btn.png" />
-        </button>
-      </div>
-    </dialog>
-    <button class="guideBtn" id="showDialogButton">
-      <img class="rulesBtn" src="./image/rules.png" />
-    </button>
-  </div>
-  <div class="rewards">
-    <div class="reward-container">
-      <div class="reward-beans-target">
-        <span>Target 2,05,000
-          <img style="width: 3vw; vertical-align: middle ;" src="./image/beans-icon.png" alt="" />
-        </span>
-      </div>
-
-      <div id="carousel-container">
-        <div id="crousalIcon">
-          <img src="./image/Amazon-card.png" class="crousal-img" alt="amazon-card" />
-          <img src="./image/In-app-banner.png" class="crousal-img" alt="InappBanner" />
-        </div>
-      </div>
-      <div class="reward-txt">
-        <span>
-          Amazon gift vouchers and
-          the Inapp banner</span>
-      </div>
-
-      <div class="left-right-arrow-container">
-        <button
-          style="border: none; box-shadow: none; background: none;transform: scale(.8); "
-          id="prevBtn"
-          onclick="prevImage()"
-        >
-          <img class="left-right-arrow" src="./image/left.png" />
-        </button>
-        <button
-          style="border: none; box-shadow: none; background: none; transform: scale(.8);"
-          id="nextBtn"
-          onclick="nextImage()"
-        >
-          <img class="left-right-arrow" src="./image/Right.png" />
-        </button>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="schedule">
-    <!-- tab switching -->
-    <div class="schedule-tab">
-      <button class="tab active">
-        <img src="./image/schedule-tab1.png" alt="" />
-      </button>
-      <button class="tab">
-        <img src="./image/schedule-tab2.png" alt="" />
+      </dialog>
+      <button class="guideBtn" id="showDialogButton">
+        <img class="rulesBtn" src="./image/rules.png" />
       </button>
     </div>
+    <div class="rewards">
+      <div class="reward-container">
+        <div class="reward-beans-target">
+          <span
+            >Target 2,05,000
+            <img
+              style="width: 3vw; vertical-align: middle"
+              src="./image/beans-icon.png"
+              alt=""
+            />
+          </span>
+        </div>
 
-    <!-- first tab -->
-    <div class="schedule-table schedule-content active">
-      <!-- first row -->
-      <div class="schedule-image">
-        <span class="schedule-text">644654238</span>
-        <img src="./image/schedule-strip.png" alt="" />
+        <div id="carousel-container">
+          <div id="crousalIcon">
+            <img
+              src="./image/Amazon-card.png"
+              class="crousal-img"
+              alt="amazon-card"
+            />
+            <img
+              src="./image/In-app-banner.png"
+              class="crousal-img"
+              alt="InappBanner"
+            />
+          </div>
+        </div>
+        <div class="reward-txt">
+          <span> Amazon gift vouchers and the Inapp banner</span>
+        </div>
+
+        <div class="left-right-arrow-container">
+          <button
+            style="
+              border: none;
+              box-shadow: none;
+              background: none;
+              transform: scale(0.8);
+            "
+            id="prevBtn"
+            onclick="prevImage()"
+          >
+            <img class="left-right-arrow" src="./image/left.png" />
+          </button>
+          <button
+            style="
+              border: none;
+              box-shadow: none;
+              background: none;
+              transform: scale(0.8);
+            "
+            id="nextBtn"
+            onclick="nextImage()"
+          >
+            <img class="left-right-arrow" src="./image/Right.png" />
+          </button>
+        </div>
       </div>
-
-      <div class="schedule-image">
-        <span class="schedule-text">Kajal</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
-      <div class="schedule-image">
-        <span class="schedule-date">Yoga | IST 8:00PM</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
-      <!-- second row -->
-      <div class="schedule-image">
-        <span class="schedule-text">585900381</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
-      <div class="schedule-image">
-        <span class="schedule-text">d_bengoli_gal</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
-      <div class="schedule-image">
-        <span class="schedule-date">Dance | IST 8:30PM</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
-      <!-- third row -->
-      <div class="schedule-image">
-        <span class="schedule-text">574092997</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
-      <div class="schedule-image">
-        <span class="schedule-text">SHYLA</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
-      <div class="schedule-image">
-        <span class="schedule-date">Dancer | IST 9:00PM</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
-      <!-- fourth row -->
-      <div class="schedule-image">
-        <span class="schedule-text">614718343</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
-      <div class="schedule-image">
-        <span class="schedule-text">Katherine</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
-      <div class="schedule-image">
-        <span class="schedule-date1">Western Dancer | IST 9:30PM</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
-      <!-- fifth row -->
-      <div class="schedule-image">
-        <span class="schedule-text">585100294</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
-      <div class="schedule-image">
-        <span class="schedule-text1">Melodious Guitar 🎸</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
-      <div class="schedule-image">
-        <span class="schedule-date">Singer | IST 10:00PM</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
-      <!-- six row -->
-      <div class="schedule-image">
-        <span class="schedule-text">591891591</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
-      <div class="schedule-image">
-        <span class="schedule-text">Megha kaur</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
-      <div class="schedule-image">
-        <span class="schedule-date">Dancer | IST 10:30PM</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
-
     </div>
 
-    <!-- second tab -->
-    <div class="schedule-table1 schedule-content hide">
-      <!-- first row -->
-      <div class="schedule-image">
-        <span class="schedule-text">98787877</span>
-        <img src="./image/schedule-strip.png" alt="" />
+    <div class="schedule">
+      <!-- tab switching -->
+      <div class="schedule-tab">
+        <button class="date24 tab active">
+          <!-- <img src="./image/schedule-tab1.png" alt="" /> -->
+        </button>
+        <button class="date25 tab">
+          <!-- <img src="./image/schedule-tab2.png" alt="" /> -->
+        </button>
       </div>
 
-      <div class="schedule-image">
-        <span class="schedule-text">Kadir</span>
-        <img src="./image/schedule-strip.png" alt="" />
+      <!-- first tab -->
+      <div class="schedule-table schedule-content active">
+        <!-- first row -->
+        <div class="schedule-image">
+          <span class="schedule-text">644654238</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <div class="schedule-image">
+          <span class="schedule-text">Kajal</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <div class="schedule-image">
+          <span class="schedule-date">Yoga | IST 8:00PM</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <!-- second row -->
+        <div class="schedule-image">
+          <span class="schedule-text">585900381</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <div class="schedule-image">
+          <span class="schedule-text">d_bengoli_gal</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <div class="schedule-image">
+          <span class="schedule-date">Dance | IST 8:30PM</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <!-- third row -->
+        <div class="schedule-image">
+          <span class="schedule-text">574092997</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <div class="schedule-image">
+          <span class="schedule-text">SHYLA</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <div class="schedule-image">
+          <span class="schedule-date">Dancer | IST 9:00PM</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <!-- fourth row -->
+        <div class="schedule-image">
+          <span class="schedule-text">614718343</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <div class="schedule-image">
+          <span class="schedule-text">Katherine</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <div class="schedule-image">
+          <span class="schedule-date1">Western Dancer | IST 9:30PM</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <!-- fifth row -->
+        <div class="schedule-image">
+          <span class="schedule-text">585100294</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <div class="schedule-image">
+          <span class="schedule-text1">Melodious Guitar 🎸</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <div class="schedule-image">
+          <span class="schedule-date">Singer | IST 10:00PM</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <!-- six row -->
+        <div class="schedule-image">
+          <span class="schedule-text">591891591</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <div class="schedule-image">
+          <span class="schedule-text">Megha kaur</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <div class="schedule-image">
+          <span class="schedule-date">Dancer | IST 10:30PM</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
       </div>
 
-      <div class="schedule-image">
-        <span class="schedule-date">Yoga | IST 8:00PM</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
+      <!-- second tab -->
+      <div class="schedule-table schedule-content">
+        <!-- first row -->
+        <div class="schedule-image">
+          <span class="schedule-text">98787877</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
 
-      <!-- second row -->
-      <div class="schedule-image">
-        <span class="schedule-text">8798789</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
+        <div class="schedule-image">
+          <span class="schedule-text">Kadir</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
 
-      <div class="schedule-image">
-        <span class="schedule-text">Kadir Khan</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
+        <div class="schedule-image">
+          <span class="schedule-date">Yoga | IST 8:00PM</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
 
-      <div class="schedule-image">
-        <span class="schedule-date">Dance | IST 8:30PM</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
+        <!-- second row -->
+        <div class="schedule-image">
+          <span class="schedule-text">8798789</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
 
-      <!-- third row -->
-      <div class="schedule-image">
-        <span class="schedule-text">574092997</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
+        <div class="schedule-image">
+          <span class="schedule-text">Kadir Khan</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
 
-      <div class="schedule-image">
-        <span class="schedule-text">SHYLA</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
+        <div class="schedule-image">
+          <span class="schedule-date">Dance | IST 8:30PM</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
 
-      <div class="schedule-image">
-        <span class="schedule-date">Dancer | IST 9:00PM</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
+        <!-- third row -->
+        <div class="schedule-image">
+          <span class="schedule-text">574092997</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
 
-      <!-- fourth row -->
-      <div class="schedule-image">
-        <span class="schedule-text">614718343</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
+        <div class="schedule-image">
+          <span class="schedule-text">SHYLA</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
 
-      <div class="schedule-image">
-        <span class="schedule-text">Katherine</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
+        <div class="schedule-image">
+          <span class="schedule-date">Dancer | IST 9:00PM</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
 
-      <div class="schedule-image">
-        <span class="schedule-date1">Western Dancer | IST 9:30PM</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
+        <!-- fourth row -->
+        <div class="schedule-image">
+          <span class="schedule-text">614718343</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
 
-      <!-- fifth row -->
-      <div class="schedule-image">
-        <span class="schedule-text">585100294</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
+        <div class="schedule-image">
+          <span class="schedule-text">Katherine</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
 
-      <div class="schedule-image">
-        <span class="schedule-text1">Melodious Guitar 🎸</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
+        <div class="schedule-image">
+          <span class="schedule-date1">Western Dancer | IST 9:30PM</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
 
-      <div class="schedule-image">
-        <span class="schedule-date">Singer | IST 10:00PM</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
+        <!-- fifth row -->
+        <div class="schedule-image">
+          <span class="schedule-text">585100294</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
 
-      <!-- six row -->
-      <div class="schedule-image">
-        <span class="schedule-text">591891591</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
+        <div class="schedule-image">
+          <span class="schedule-text1">Melodious Guitar 🎸</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
 
-      <div class="schedule-image">
-        <span class="schedule-text">Megha kaur</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
+        <div class="schedule-image">
+          <span class="schedule-date">Singer | IST 10:00PM</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
 
-      <div class="schedule-image">
-        <span class="schedule-date">Dancer | IST 10:30PM</span>
-        <img src="./image/schedule-strip.png" alt="" />
-      </div>
+        <!-- six row -->
+        <div class="schedule-image">
+          <span class="schedule-text">591891591</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
 
+        <div class="schedule-image">
+          <span class="schedule-text">Megha kaur</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+
+        <div class="schedule-image">
+          <span class="schedule-date">Dancer | IST 10:30PM</span>
+          <img src="./image/schedule-strip.png" alt="" />
+        </div>
+      </div>
     </div>
 
-  </div>
-
-  <div class="leaderBoard">
-    <!-- leaderboard  start -->
-    <div class="wrapper-leaderboard">
-      <!-- first row -->
-      <div class="leaderBoard-item">
-        <div class="top-frame">
-          <img src="./image/frame.png" alt="" />
-          <div class="nameId">
+    <div class="leaderBoard">
+      <div class="toppers">
+        <div class="silver top">
+          <img src="./image/silver.png" alt="silver" />
+          <div class="topperName">
             <span>Name:</span>
             <span>ID:</span>
+            <span>000,000,00</span>
           </div>
         </div>
-        <div class="leader-beans">
-          <span class="beanImgs">000,000,00</span>
-          <img src="./image/beans-icon.png" alt="" style="width: 3vw; height: 3;" />
-        </div>
-      </div>
-
-
-      <div class="leaderBoard-item">
-        <div class="top-frame">
-          <img src="./image/frame.png" alt="" />
-          <div class="nameId">
+        <div class="gold top">
+          <img src="./image/gold.png" alt="gold" />
+          <div class="topperName">
             <span>Name:</span>
             <span>ID:</span>
+            <span>000,000,00</span>
           </div>
         </div>
-        <div class="leader-beans">
-          <span class="beanImgs">000,000,00</span>
-          <img src="./image/beans-icon.png" alt="" style="width: 3vw; height: 3;" />
-        </div>
-      </div>
-
-      <div class="leaderBoard-item">
-        <div class="top-frame">
-          <img src="./image/frame.png" alt="" />
-          <div class="nameId">
+        <div class="bronze top">
+          <img src="./image/bronze.png" alt="bronze" />
+          <div class="topperName">
             <span>Name:</span>
             <span>ID:</span>
+            <span>000,000,00</span>
           </div>
         </div>
-        <div class="leader-beans">
-          <span class="beanImgs">000,000,00</span>
-          <img src="./image/beans-icon.png" alt="" style="width: 3vw; height: 3;" />
-        </div>
       </div>
-
-      <!-- circle icon -->
-      <div class="leaderBoard-item">
-        <div class="top-frame1">
-          <img src="./image/frame.png" alt="" />
-          <div class="nameId">
-            <span>Name:</span>
-            <span>ID:</span>
+      <!-- leaderboard  start -->
+      <div class="wrapper-leaderboard">
+        <!-- first row -->
+        <div class="leaderBoard-item">
+          <div class="top-frame">
+            <img src="./image/frame.png" alt="" />
+            <div class="nameId">
+              <span>Name:</span>
+              <span>ID:</span>
+            </div>
+          </div>
+          <div class="leader-beans">
+            <span class="beanImgs">000,000,00</span>
+            <img
+              src="./image/beans-icon.png"
+              alt=""
+              style="width: 3vw; height: 3"
+            />
           </div>
         </div>
-        <div class="leader-beans">
-          <span class="beanImgs">000,000,00</span>
-          <img src="./image/beans-icon.png" alt="" style="width: 3vw; height: 3;" />
-        </div>
-      </div>
 
-
-      <div class="leaderBoard-item">
-        <div class="top-frame1">
-          <img src="./image/frame.png" alt="" />
-          <div class="nameId">
-            <span>Name:</span>
-            <span>ID:</span>
+        <div class="leaderBoard-item">
+          <div class="top-frame">
+            <img src="./image/frame.png" alt="" />
+            <div class="nameId">
+              <span>Name:</span>
+              <span>ID:</span>
+            </div>
+          </div>
+          <div class="leader-beans">
+            <span class="beanImgs">000,000,00</span>
+            <img
+              src="./image/beans-icon.png"
+              alt=""
+              style="width: 3vw; height: 3"
+            />
           </div>
         </div>
-        <div class="leader-beans">
-          <span class="beanImgs">000,000,00</span>
-          <img src="./image/beans-icon.png" alt="" style="width: 3vw; height: 3;" />
-        </div>
-      </div>
 
-      <div class="leaderBoard-item">
-        <div class="top-frame1">
-          <img src="./image/frame.png" alt="" />
-          <div class="nameId">
-            <span>Name:</span>
-            <span>ID:</span>
+        <div class="leaderBoard-item">
+          <div class="top-frame">
+            <img src="./image/frame.png" alt="" />
+            <div class="nameId">
+              <span>Name:</span>
+              <span>ID:</span>
+            </div>
+          </div>
+          <div class="leader-beans">
+            <span class="beanImgs">000,000,00</span>
+            <img
+              src="./image/beans-icon.png"
+              alt=""
+              style="width: 3vw; height: 3"
+            />
           </div>
         </div>
-        <div class="leader-beans">
-          <span class="beanImgs">000,000,00</span>
-          <img src="./image/beans-icon.png" alt="" style="width: 3vw; height: 3;" />
-        </div>
-      </div>
 
-      <div class="leaderBoard-item">
-        <div class="top-frame1">
-          <img src="./image/frame.png" alt="" />
-          <div class="nameId">
-            <span>Name:</span>
-            <span>ID:</span>
+        <!-- circle icon -->
+        <div class="leaderBoard-item">
+          <div class="top-frame1">
+            <img src="./image/frame.png" alt="" />
+            <div class="nameId">
+              <span>Name:</span>
+              <span>ID:</span>
+            </div>
+          </div>
+          <div class="leader-beans">
+            <span class="beanImgs">000,000,00</span>
+            <img
+              src="./image/beans-icon.png"
+              alt=""
+              style="width: 3vw; height: 3"
+            />
           </div>
         </div>
-        <div class="leader-beans">
-          <span class="beanImgs">000,000,00</span>
-          <img src="./image/beans-icon.png" alt="" style="width: 3vw; height: 3;" />
-        </div>
-      </div>
 
-      <div class="leaderBoard-item">
-        <div class="top-frame1">
-          <img src="./image/frame.png" alt="" />
-          <div class="nameId">
-            <span>Name:</span>
-            <span>ID:</span>
+        <div class="leaderBoard-item">
+          <div class="top-frame1">
+            <img src="./image/frame.png" alt="" />
+            <div class="nameId">
+              <span>Name:</span>
+              <span>ID:</span>
+            </div>
+          </div>
+          <div class="leader-beans">
+            <span class="beanImgs">000,000,00</span>
+            <img
+              src="./image/beans-icon.png"
+              alt=""
+              style="width: 3vw; height: 3"
+            />
           </div>
         </div>
-        <div class="leader-beans">
-          <span class="beanImgs">000,000,00</span>
-          <img src="./image/beans-icon.png" alt="" style="width: 3vw; height: 3;" />
-        </div>
-      </div>
 
-      <div class="leaderBoard-item">
-        <div class="top-frame1">
-          <img src="./image/frame.png" alt="" />
-          <div class="nameId">
-            <span>Name:</span>
-            <span>ID:</span>
+        <div class="leaderBoard-item">
+          <div class="top-frame1">
+            <img src="./image/frame.png" alt="" />
+            <div class="nameId">
+              <span>Name:</span>
+              <span>ID:</span>
+            </div>
+          </div>
+          <div class="leader-beans">
+            <span class="beanImgs">000,000,00</span>
+            <img
+              src="./image/beans-icon.png"
+              alt=""
+              style="width: 3vw; height: 3"
+            />
           </div>
         </div>
-        <div class="leader-beans">
-          <span class="beanImgs">000,000,00</span>
-          <img src="./image/beans-icon.png" alt="" style="width: 3vw; height: 3;" />
-        </div>
-      </div>
 
-      <div class="leaderBoard-item">
-        <div class="top-frame1">
-          <img src="./image/frame.png" alt="" />
-          <div class="nameId">
-            <span>Name:</span>
-            <span>ID:</span>
+        <div class="leaderBoard-item">
+          <div class="top-frame1">
+            <img src="./image/frame.png" alt="" />
+            <div class="nameId">
+              <span>Name:</span>
+              <span>ID:</span>
+            </div>
+          </div>
+          <div class="leader-beans">
+            <span class="beanImgs">000,000,00</span>
+            <img
+              src="./image/beans-icon.png"
+              alt=""
+              style="width: 3vw; height: 3"
+            />
           </div>
         </div>
-        <div class="leader-beans">
-          <span class="beanImgs">000,000,00</span>
-          <img src="./image/beans-icon.png" alt="" style="width: 3vw; height: 3;" />
+
+        <div class="leaderBoard-item">
+          <div class="top-frame1">
+            <img src="./image/frame.png" alt="" />
+            <div class="nameId">
+              <span>Name:</span>
+              <span>ID:</span>
+            </div>
+          </div>
+          <div class="leader-beans">
+            <span class="beanImgs">000,000,00</span>
+            <img
+              src="./image/beans-icon.png"
+              alt=""
+              style="width: 3vw; height: 3"
+            />
+          </div>
+        </div>
+
+        <div class="leaderBoard-item">
+          <div class="top-frame1">
+            <img src="./image/frame.png" alt="" />
+            <div class="nameId">
+              <span>Name:</span>
+              <span>ID:</span>
+            </div>
+          </div>
+          <div class="leader-beans">
+            <span class="beanImgs">000,000,00</span>
+            <img
+              src="./image/beans-icon.png"
+              alt=""
+              style="width: 3vw; height: 3"
+            />
+          </div>
+        </div>
+
+        <div class="leaderBoard-item">
+          <div class="top-frame1">
+            <img src="./image/frame.png" alt="" />
+            <div class="nameId">
+              <span>Name:</span>
+              <span>ID:</span>
+            </div>
+          </div>
+          <div class="leader-beans">
+            <span class="beanImgs">000,000,00</span>
+            <img
+              src="./image/beans-icon.png"
+              alt=""
+              style="width: 3vw; height: 3"
+            />
+          </div>
         </div>
       </div>
-
-
     </div>
-  </div>
 
-  <div class="footer">
-  </div>
-  <p class="rights">All rights reserved by StreamKar</p>
+    <div class="footer"></div>
+    <p class="rights">All rights reserved by StreamKar</p>
 
-  <script src="./script.js"></script>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>

@@ -17,7 +17,7 @@ body {
   width: 96%;
   background-image: url(./image/rewardBg.png);
   background-size: 100% 100%;
-  height: 50vh;
+  height: 54vh;
 }
 
 .titleImg {
@@ -62,7 +62,7 @@ body {
   /* margin-top: 2rem; */
 }
 
-#crousalIcon{
+#crousalIcon {
   /* width: 57%;
   height: 8vh; */
   display: flex;
@@ -73,7 +73,6 @@ body {
   height: 16vh;
   /* position: absolute; */
   /* z-index: 100; */
-
 }
 
 .rewards-card img {
@@ -85,16 +84,21 @@ body {
   /* text-overflow: ellipsis; */
   white-space: break-spaces;
   position: absolute;
-  left: 4rem;
-  top: 8rem;
+  left: 3rem;
+  top: 10rem;
+  background: url("./image/schedule-targetBg.png") center / 100% 100% no-repeat;
+  width: 75%;
+  height: 10vh;
 }
 
 .reward-txt span {
   color: white;
   font-size: 4vw;
+  position: relative;
+  right: 4vw;
 }
 
-.reward-container{
+.reward-container {
   position: relative;
   top: 25vw;
 }
@@ -130,30 +134,19 @@ span {
 }
 
 .schedule-table {
-  filter: brightness(0.8);
+  /* filter: brightness(0.8);
   display: grid;
-  grid-template-columns: 23% 25% 26%;
+  grid-template-columns: 23% 25% 26%; */
   /* Three columns */
-  grid-gap: 1px;
+  /* grid-gap: 1px; */
   /* Adjust the gap between images as needed */
-  place-content: center;
+  /* place-content: center;
   margin: 0 auto;
-  /* padding-inline: 2vw; */
+  padding-inline: 2vw; */
+  display: none;
 }
 
-.schedule-table.active{
-  filter: brightness(0.8);
-  display: grid;
-  grid-template-columns: 23% 25% 26%;
-  /* Three columns */
-  grid-gap: 1px;
-  /* Adjust the gap between images as needed */
-  place-content: center;
-  margin: 0 auto;
-  /* padding-inline: 2vw; */
-}
-
-.schedule-table1.active{
+.schedule-table.active {
   filter: brightness(0.8);
   display: grid;
   grid-template-columns: 23% 25% 26%;
@@ -186,33 +179,69 @@ span {
   font-weight: 600;
 }
 
-.schedule-tab{
+.schedule-tab {
   display: flex;
   width: 80%;
   position: absolute;
-  top: 54rem;
+  top: 56rem;
   left: 2.5rem;
+  height: 10vw;
+  justify-content: center;
+  gap: 4vw;
+  z-index: 999;
 }
 
-.schedule-tab img{
+/* .schedule-tab img {
   width: 100%;
-}
+} */
 
-.tab{
-  opacity: .5;
+.date24 {
+  background: url("./image/schedule-tab1.png") center / 100% 100% no-repeat;
+  width: 40%;
+  opacity: 0.5;
 }
-.tab.active{
+.date25 {
+  background: url("./image/schedule-tab2.png") center / 100% 100% no-repeat;
+  width: 40%;
+  opacity: 0.5;
+}
+.date24.active,
+.date25.active {
   opacity: 1;
 }
 
-.hide{
-  display: none;
-}
-
-button{
+button {
   background: none;
   border: none;
   outline: none;
+}
+
+.toppers {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 5vw;
+  left: 10%;
+  top: 16%;
+  position: absolute;
+}
+
+.top {
+  background: url("./image/topper-bg.png") center / 100% 100% no-repeat;
+  position: relative;
+  width: 50vw;
+  height: 33vw;
+}
+.top img {
+  width: 86%;
+  position: absolute;
+  top: -6vw;
+  left: 2vw;
+}
+
+.gold {
+  margin-top: -5vw;
 }
 
 .leaderBoard {
@@ -222,7 +251,8 @@ button{
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin-top: 2em;
-  padding-bottom: 5rem;
+  padding-bottom: 8rem;
+  position: relative;
 }
 
 .leaderBoard-item {
@@ -259,18 +289,17 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid gold; */
   padding: 0.5vw 2vw;
   border-radius: 1.5vw;
   height: 5vw;
-  background: #060e79c7;
 }
 
 .leader-beans img {
   width: 100%;
 }
 
-.beanImgs {}
+.beanImgs {
+}
 
 .top-frame1 {
   width: 10%;
@@ -311,6 +340,14 @@ button{
   font-size: 10px;
 }
 
+.topperName{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 3.5rem;
+  transform: scale(.7);
+}
+
 .closeBtn {
   box-shadow: none;
   outline: none;
@@ -342,7 +379,7 @@ button{
 }
 
 .dialog-bg {
-  background-image: url(./image/Rules-bg.png);
+  background-image: url('./image/Rules-bg.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -427,7 +464,10 @@ button{
 }
 
 .reward-beans-target {
-  background-color: #1d8d15d6;
+  /* background-color: #1d8d15d6; */
+  background-image: url('./image/schedule-giftBg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   width: 45%;
   height: 5vh;
   margin: 3vw auto;
@@ -464,13 +504,13 @@ button{
   width: 25%;
 }
 
-
 .wrapper-leaderboard {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2vw;
   margin-top: 4rem;
+  padding-top: 14rem;
 }
 
 .schedule-text1 {

@@ -39,7 +39,7 @@ function nextImage() {
 }
 
 
-
+/*
 //tab switching code
 const tabs = document.querySelectorAll(".tab");
 const content = document.querySelectorAll(".schedule-content");
@@ -82,3 +82,27 @@ tabs.forEach((tab, i, buttons) => {
 
 // Trigger click event on the first tab to make it active initially
 tabs[0].click();
+*/
+
+// Abhishek's tab switching code
+const tabs = document.querySelectorAll(".schedule-tab > button");
+let content = document.querySelectorAll(".schedule-content");
+console.log(tabs);
+console.log(content);
+tabs.forEach((tab, i) => {
+  console.log(tab);
+  tab.addEventListener("click", () => {
+    tabs.forEach((t) => {
+      t.classList.remove("active");
+    });
+ 
+    content.forEach((c, ci) => {
+      if (i === ci) {
+        c.classList.add("active");
+      } else {
+        c.classList.remove("active");
+      }
+    });
+    tab.classList.add("active");
+  });
+});
