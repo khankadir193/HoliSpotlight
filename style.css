@@ -55,6 +55,27 @@ body {
   gap: 1rem;
 }
 
+#carousel-container {
+  width: 24vw;
+  overflow: hidden;
+  margin: auto;
+  /* margin-top: 2rem; */
+}
+
+#crousalIcon{
+  /* width: 57%;
+  height: 8vh; */
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.crousal-img {
+  width: 100%;
+  height: 16vh;
+  /* position: absolute; */
+  /* z-index: 100; */
+
+}
+
 .rewards-card img {
   width: 100%;
 }
@@ -63,6 +84,9 @@ body {
   text-align: center;
   /* text-overflow: ellipsis; */
   white-space: break-spaces;
+  position: absolute;
+  left: 4rem;
+  top: 8rem;
 }
 
 .reward-txt span {
@@ -155,13 +179,13 @@ span {
   width: 75%;
   margin: 0vw auto 0 3vw;
   position: relative;
-  bottom: 3rem;
   display: flex;
   justify-content: space-between;
   margin-inline: auto;
   padding-block: 2vw;
   align-items: center;
   padding-right: 1vw;
+  top: 3rem;
 }
 
 .top-frame {
@@ -412,5 +436,5 @@ span {
   gap: 11rem;
   justify-content: center;
   position: relative;
-  top: -9rem;
+  top: -4rem;
 }
