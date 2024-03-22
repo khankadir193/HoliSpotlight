@@ -37,3 +37,48 @@ function nextImage() {
   console.log('nextButtoonClicked................................');
     showImage(currentIndex + 1);
 }
+
+
+
+//tab switching code
+const tabs = document.querySelectorAll(".tab");
+const content = document.querySelectorAll(".schedule-content");
+
+tabs.forEach((tab, i, buttons) => {
+    console.log('tab...',tab);
+    tab.addEventListener('click', () => {
+        // Remove 'active' class from all tabs
+        tabs.forEach((t) => {
+            t.classList.remove('active');
+        });
+
+        // Add 'active' class to the clicked tab
+        tab.classList.add('active');
+
+        // Hide all content elements
+        content.forEach((c) => {
+            c.classList.remove('active');
+            c.style.display = 'none';
+        });
+
+        // Show corresponding content based on the clicked tab
+        // if (i === 0) {
+        //     content[0].classList.add('active');
+        //     content[0].style.display = 'block';
+        //     content[0].style.display = 'Grid';
+        //     // buttons[1].classList.add('active');
+        //     // buttons[0].style.display = 'none';
+        // } else if (i === 1) {
+        //     content[1].classList.add('active');
+        //     content[1].style.display = 'block';
+        //     // content[1].style.display = 'flex';
+        //     buttons[0].classList.add('active');
+        //     buttons[0].style.display = 'block';
+        //     buttons[0].style.display = 'flex';
+        //     buttons[1].style.display = 'none';
+        // }
+    });
+});
+
+// Trigger click event on the first tab to make it active initially
+tabs[0].click();

@@ -141,6 +141,30 @@ span {
   /* padding-inline: 2vw; */
 }
 
+.schedule-table.active{
+  filter: brightness(0.8);
+  display: grid;
+  grid-template-columns: 23% 25% 26%;
+  /* Three columns */
+  grid-gap: 1px;
+  /* Adjust the gap between images as needed */
+  place-content: center;
+  margin: 0 auto;
+  /* padding-inline: 2vw; */
+}
+
+.schedule-table1.active{
+  filter: brightness(0.8);
+  display: grid;
+  grid-template-columns: 23% 25% 26%;
+  /* Three columns */
+  grid-gap: 1px;
+  /* Adjust the gap between images as needed */
+  place-content: center;
+  margin: 0 auto;
+  /* padding-inline: 2vw; */
+}
+
 .schedule-table img {
   width: 100%;
   height: 5vh;
@@ -172,6 +196,17 @@ span {
 
 .schedule-tab img{
   width: 100%;
+}
+
+.tab{
+  opacity: .5;
+}
+.tab.active{
+  opacity: 1;
+}
+
+.hide{
+  display: none;
 }
 
 button{
