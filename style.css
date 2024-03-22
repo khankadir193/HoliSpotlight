@@ -68,6 +68,7 @@ body {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
+
 .crousal-img {
   width: 100%;
   height: 16vh;
@@ -200,11 +201,13 @@ span {
   width: 40%;
   opacity: 0.5;
 }
+
 .date25 {
   background: url("./image/schedule-tab2.png") center / 100% 100% no-repeat;
   width: 40%;
   opacity: 0.5;
 }
+
 .date24.active,
 .date25.active {
   opacity: 1;
@@ -223,7 +226,7 @@ button {
   margin: 0 auto;
   gap: 5vw;
   left: 10%;
-  top: 16%;
+  top: 18%;
   position: absolute;
 }
 
@@ -233,6 +236,7 @@ button {
   width: 50vw;
   height: 33vw;
 }
+
 .top img {
   width: 86%;
   position: absolute;
@@ -251,7 +255,7 @@ button {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin-top: 2em;
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
   position: relative;
 }
 
@@ -268,7 +272,6 @@ button {
   padding-block: 2vw;
   align-items: center;
   padding-right: 1vw;
-  top: 3rem;
 }
 
 .top-frame {
@@ -298,8 +301,7 @@ button {
   width: 100%;
 }
 
-.beanImgs {
-}
+.beanImgs {}
 
 .top-frame1 {
   width: 10%;
@@ -340,12 +342,37 @@ button {
   font-size: 10px;
 }
 
-.topperName{
+.topperName {
   display: flex;
   flex-direction: column;
   position: relative;
   top: 3.5rem;
   transform: scale(.7);
+}
+
+.topperName img {
+  width: 32%;
+  position: absolute;
+  top: 1rem;
+  left: 4rem;
+}
+
+.coin{
+  background-image: url('./image/coin.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 60%;
+  height: 8vh;
+  position: relative;
+  top: 5rem;
+  left: 4rem;
+}
+
+.coin span{
+  font-size: 20px;
+  position: absolute;
+  left: 4.5rem;
+  top: 1rem;
 }
 
 .closeBtn {

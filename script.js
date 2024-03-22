@@ -84,7 +84,7 @@ tabs.forEach((tab, i, buttons) => {
 tabs[0].click();
 */
 
-// Abhishek's tab switching code
+// anothr ways switching code
 const tabs = document.querySelectorAll(".schedule-tab > button");
 let content = document.querySelectorAll(".schedule-content");
 console.log(tabs);
