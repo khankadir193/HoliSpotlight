@@ -39,7 +39,7 @@ body {
   background: none;
   box-shadow: none;
   border: none;
-  top: 10rem;
+  top: 3rem;
   width: 20%;
   height: 7%;
 }
@@ -59,12 +59,9 @@ body {
   width: 24vw;
   overflow: hidden;
   margin: auto;
-  /* margin-top: 2rem; */
 }
 
 #crousalIcon {
-  /* width: 57%;
-  height: 8vh; */
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
@@ -72,8 +69,6 @@ body {
 .crousal-img {
   width: 100%;
   height: 16vh;
-  /* position: absolute; */
-  /* z-index: 100; */
 }
 
 .rewards-card img {
@@ -82,7 +77,6 @@ body {
 
 .reward-txt {
   text-align: center;
-  /* text-overflow: ellipsis; */
   white-space: break-spaces;
   position: absolute;
   left: 3rem;
@@ -301,8 +295,6 @@ button {
   width: 100%;
 }
 
-.beanImgs {}
-
 .top-frame1 {
   width: 10%;
   display: flex;
@@ -319,9 +311,6 @@ button {
 .leader-beans1 {
   width: 30%;
   display: flex;
-  /* position: absolute;
-  right: 7vw;
-  bottom: 4vw; */
   justify-content: center;
   align-items: center;
   position: relative;
