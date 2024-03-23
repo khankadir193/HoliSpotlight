@@ -80,7 +80,7 @@ body {
   white-space: break-spaces;
   position: absolute;
   left: 3rem;
-  top: 10rem;
+  top: 11rem;
   background: url("./image/schedule-targetBg.png") center / 100% 100% no-repeat;
   width: 75%;
   height: 10vh;
@@ -178,7 +178,7 @@ span {
   display: flex;
   width: 80%;
   position: absolute;
-  top: 56rem;
+  top: 57rem;
   left: 2.5rem;
   height: 10vw;
   justify-content: center;
