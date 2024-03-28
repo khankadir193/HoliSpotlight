@@ -566,3 +566,62 @@ button {
 /* remaining task */
 /* need to update schedule data 24/25 march */
 /* need to update rules content for docs */
+/* Main container */
+
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* padding: 20px; */
+}
+
+/* Tab switching */
+.schedule-tab {
+  display: flex;
+  /* margin-bottom: 20px; */
+}
+
+.tab {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Schedule content */
+.schedule-content {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+/* Schedule rows */
+.schedule-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Schedule images */
+.schedule-image {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .schedule-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .schedule-image {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
