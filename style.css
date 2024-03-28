@@ -164,6 +164,7 @@ span {
 
 .schedule-image {
   position: relative;
+  height: 3.8vh;
   /* width: 25vw; */
   /* right: 12rem; */
   top: 41vw;
